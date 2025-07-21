@@ -9,7 +9,7 @@ const Filter = ({ onTitleChange, onRatingChange }) => {
       <input 
         type="number" 
         placeholder="Minimum rating"
-        onChange={(e) => onRatingChange(e.target.value)} 
+        onChange={(e) => onRatingChange(Number(e.target.value))} 
       />
     </div>
   );
